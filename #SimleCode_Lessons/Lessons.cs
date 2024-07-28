@@ -1,7 +1,4 @@
-﻿using System;
-// using System.Configuration;
-using System.Globalization; // Он разграничевает классы, что бы не конфликтовали друг с другом
-
+﻿// using System.Configuration;
 
 namespace _SimleCode_Lessons
 {
@@ -28,11 +25,12 @@ namespace _SimleCode_Lessons
 
 
             // Lesson 6. - Ввод данных в консоль
-
-            //string data;
-            //data = Console.ReadLine(); // RedLine для получения данных и корректной обрабодке () сюда он не принимает никаких параметров, ничего не пишем
-            //Console.WriteLine(data);
-            //Console.WriteLine("Hi " + data +"!!!");// если делаем пробел в скобках и ставим + то это Кондетенация (обьеденение строк) и добавляем после + data (наша переменная)  и теперь если скопилировать и написать в строку консоли - то будет Hi"Название что напишем"
+            /*
+            string data;
+            data = Console.ReadLine(); // RedLine для получения данных и корректной обрабодке () сюда он не принимает никаких параметров, ничего не пишем
+            Console.WriteLine(data);
+            Console.WriteLine("Hi " + data +"!!!");// если делаем пробел в скобках и ставим + то это Кондетенация (обьеденение строк) и добавляем после + data (наша переменная)  и теперь если скопилировать и написать в строку консоли - то будет Hi"Название что напишем"
+            */
             // можно дабавить еще один + после data и "!!!"
 
 
@@ -416,59 +414,100 @@ namespace _SimleCode_Lessons
                 }
             */
             // Lesson 20.ПИШЕМ КАЛЬКУЛЯТОР НА C# - КАК НАПИСАТЬ КАЛЬКУЛЯТОР НА C# - C# ДОМАШНИЕ ЗАДАНИЯ - #3
-            
-                while (true) // Цикл, повторения кода while несколько раз, он будет ниже код повторять бессконечно 
+            /*
+            while (true) // Цикл, повторения кода while несколько раз, он будет ниже код повторять бессконечно 
+            {
+                Console.Clear(); // Clear - Очищает консоль (калькулятор) когда весь цикл по коду сделан, жмем Enter все чистится и вводим новые данные в калькулятор
+                double firstValue, secondValue;
+                string action;
+                try
                 {
-                    Console.Clear(); // Clear - Очищает консоль (колькулятор) когда весь цикл по коду сделан, жмем Enter все чиститься и вводин новые данные в калькулятор
-                    double firstValue, secondValue;
-                    string action;
-                    try
-                    {
-                        Console.WriteLine("Введите первое число"); // Если тут возникает ошибка, то мы попадет в блок catch (Exception)
-                        firstValue = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Введите первое число"); // Если тут возникает ошибка, то мы попадем в блок catch (Exception)
+                    firstValue = double.Parse(Console.ReadLine());
 
-                        Console.WriteLine("Введите второе число");
-                        secondValue = double.Parse(Console.ReadLine());
-                    }
-                    catch (Exception) // Блок catch (Exception)
-                    { 
-                        Console.WriteLine("Не верный ввод, введите число");
-                        Console.ReadLine(); // Ждет консоль ввода и не закрывается, как бы останавливает ее
-                        continue; // это приведет к тому, что код, что ниже выполняться не будет и мы попадет в начала нашего цикла while
-                    }
-
-                    Console.WriteLine("Вберите операцию: '+' '-' '*' '/'");
-                    action = Console.ReadLine();
-
-                    switch (action)
-                    {
-                        case "+":
-                            Console.WriteLine(firstValue + secondValue);
-                            break;
-                        case "-":
-                            Console.WriteLine(firstValue - secondValue);
-                            break;
-                        case "*":
-                            Console.WriteLine(firstValue * secondValue);
-                            break;
-                        case "/":
-                            if (secondValue == 0)
-                                Console.WriteLine(0); // Если делим на ноль будет 0 
-                            else
-                                Console.WriteLine(firstValue / secondValue); // если делим не на 0 то будет деление
-                            Console.WriteLine(firstValue / secondValue); // на 0 не делится и может вылетать программа, но можно сделать как выше и все будет норм
-                            break;
-                        default:
-                            Console.WriteLine("Не вверный ввод"); // Будет это сообщение если введем что-то другое
-                            break;
-                    }
-
-                    Console.ReadLine(); // Ждет консоль ввода и не закрывается, как бы останавливает ее
-
-
-                    // LESSON 21.ЦИКЛ WHILE - ЧТО ЭТО - КАК РАБОТАЕТ
+                    Console.WriteLine("Введите второе число");
+                    secondValue = double.Parse(Console.ReadLine());
                 }
+                catch (Exception) // Блок catch (Exception)
+                { 
+                    Console.WriteLine("Не верный ввод, введите число");
+                    Console.ReadLine(); // Ждет консоль ввода и не закрывается, как бы останавливает ее
+                    continue; // это приведет к тому, что код, что ниже выполняться не будет и мы попадем в начала нашего цикла while
+                }
+
+                Console.WriteLine("Выберите операцию: '+' '-' '*' '/'");
+                action = Console.ReadLine();
+
+                switch (action)
+                {
+                    case "+":
+                        Console.WriteLine(firstValue + secondValue);
+                        break;
+                    case "-":
+                        Console.WriteLine(firstValue - secondValue);
+                        break;
+                    case "*":
+                        Console.WriteLine(firstValue * secondValue);
+                        break;
+                    case "/":
+                        if (secondValue == 0)
+                            Console.WriteLine(0); // Если делим на ноль будет 0 
+                        else
+                            Console.WriteLine(firstValue / secondValue); // если делим не на 0 то будет деление
+                        Console.WriteLine(firstValue / secondValue); // на 0 не делится и может вылетать программа, но можно сделать как выше и все будет норм
+                        break;
+                    default:
+                        Console.WriteLine("Не вверный ввод"); // Будет это сообщение если введем что-то другое
+                        break;
+                }
+
+                Console.ReadLine(); // Ждет консоль ввода и не закрывается, как бы останавливает ее
+            }
+            */
+
+
+            // LESSON 21.ЦИКЛ WHILE - ЧТО ЭТО - КАК РАБОТАЕТ.
+            //Цикл - повторить код сколько нужно, хоть бессконечно
+            /*
+             int count = 0; // Счетчик итераций повторений
+             while (true) //While - цикл, (true) - тут условия до какого будет выполнятся цикл
+             while (count < 10) // Так он выполнит 10 итераций
+             { // в скобочках находится тот вариант который будет зациклен и будет повторятся
+                 count++;
+                 Console.WriteLine("Выполняем действие");
+             }
+             */
+
+            //Сделаем так ,что мы впишем кол-во в консоле и столько он нам сделает повторенй:
+            /*
+            int count = 0; 
+            int limit = int.Parse(Console.ReadLine()); // Прямо в консоле можем написать кол-во повторений 
+            while (count < limit) 
+                { 
+                    count++;
+                    Console.WriteLine("Выполняем действие");
+                }
+            */
+
+
+            // Lesson 22.ЦИКЛ DO WHILE - ЧТО ЭТО - КАК РАБОТАЕТ 
+            /*
+            do // сразу выполняет действие в {} // do while всегда выполняет хотя бы одно действие, не важно что стоит true или false
+            {
+                Console.WriteLine("Действие"); // тут логика какого-то действия
+            } while (true); // потом проверяет истинность условия
+            */
+
+            // Lesson 23.СУММА И КОЛИЧЕСТВО ЧЕТНЫХ И НЕЧЕТНЫХ ЧИСЕЛ В ДИАПАЗОНЕ - C# ДОМАШНИЕ ЗАДАНИЯ - #4
+
+
+
+
+
+
+
+
         }
-    } 
+    }
 
 }
