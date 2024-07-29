@@ -1,5 +1,8 @@
 ﻿// using System.Configuration;
 
+using System;
+using System.CodeDom;
+
 namespace _SimleCode_Lessons
 {
     internal class Lessons
@@ -500,11 +503,44 @@ namespace _SimleCode_Lessons
 
             // Lesson 23.СУММА И КОЛИЧЕСТВО ЧЕТНЫХ И НЕЧЕТНЫХ ЧИСЕЛ В ДИАПАЗОНЕ - C# ДОМАШНИЕ ЗАДАНИЯ - #4
 
+            //Task:
+            //uint - не может хранить отрицательные числа
+            /*
+            uint oddNumbersCount = 0; //Нечетные числа //oddNumbers четное число
+            uint evenNumbersCount = 0; //Четные числа //evenNumbers нечетное число
 
+            int oddNumbersSum = 0; //Что бы показыва сумму четных или нечетных чисел
+            int evenNumbersSum = 0;
 
+            Console.WriteLine("Введите первое число диапазона");
+            int currenValue = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Введите последнее число диапазона");
+            int limit = int.Parse(Console.ReadLine()); // До какого числа нужно подсчитывать четные или нечетные числа
 
+            while (currenValue <= limit) //currenValue должна быть меньше чем limit - если это так то у нас будет true
+            {
+                if (currenValue % 2 == 0) //currenValue - проверяется четная или нет
+                {                                      
+                    evenNumbersCount++;
+                    evenNumbersSum = evenNumbersSum + currenValue; // Есть сокращение evenNumbersSum += currenValue;
+                }
+                else
+                {
+                    currenValue++;
+                    oddNumbersSum = oddNumbersSum + currenValue;                   
+                }
 
+                Console.WriteLine("Количество нечетных чисел: " + oddNumbersCount);
+                Console.WriteLine("Количество четных чисел: " + evenNumbersCount);
+                Console.WriteLine("Сумма нечетных чисел: " + oddNumbersSum);
+                Console.WriteLine("Сумма четных чисел: " + evenNumbersSum);
+                Console.ReadLine(); //Что бы консоль не закрыввалсь 
+
+            }   
+            */
+
+           // Lesson 24.C# ЦИКЛ FOR - C# 
 
 
         }
