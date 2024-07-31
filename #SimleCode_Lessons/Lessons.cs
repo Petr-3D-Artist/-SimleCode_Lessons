@@ -678,7 +678,7 @@ namespace _SimleCode_Lessons
             */
 
 
-            //LESSON 28.ВЛОЖЕННЫЕ ЦИКЛЫ  - КАК РАБОТАЮТ 1
+            //LESSON 28.ВЛОЖЕННЫЕ ЦИКЛЫ  - КАК РАБОТАЮТ 
 
 
 
