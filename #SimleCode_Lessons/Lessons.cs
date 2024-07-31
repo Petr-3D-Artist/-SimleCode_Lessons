@@ -8,7 +8,7 @@ namespace _SimleCode_Lessons
     internal class Lessons
     {
         static void Main(string[] args)
-        {                                           // Lesson 4 and 5  // Типы данных // ПЕРЕМЕННЫЕ // ИНИЦИАЛИЗАЦИЯ
+        {                                          // Lesson 4 and 5  // Типы данных // ПЕРЕМЕННЫЕ // ИНИЦИАЛИЗАЦИЯ
 
             //ЧИСЛОВЫЕ (ЦЕЛОЧИСЛЕННЫЕ) ТИПЫ:
             //тип_переменной имя_переменной;
@@ -571,7 +571,7 @@ namespace _SimleCode_Lessons
             Console.ReadLine();
             */
 
-            //Вот пример работы с двумя цклами:
+            //Вот пример работы с двумя циклами:
             /*
             int i = 0;
 
@@ -581,7 +581,7 @@ namespace _SimleCode_Lessons
             }
             for (; i < 5; i++) // продолжение цикла
             {
-                Console.WriteLine("for_2: " + i); //почитает от 3 до 4
+                Console.WriteLine("for_2: " + i); //посчитает от 3 до 4
             }
 
             Console.ReadLine();
@@ -597,6 +597,7 @@ namespace _SimleCode_Lessons
             }
             Console.ReadLine();
             */
+
             //Как в For поместить несколько переменных:
             /*
             for (int i = 0, j = 5; i < 10 && j < 12; i++,j++) // Через запятую добав. еще переменную int i = 0,j = 5; 
@@ -609,19 +610,19 @@ namespace _SimleCode_Lessons
 
             //Цикл For  выполняется в  обрятном порядке, назад:
             /*
-            int i = int.Parse(Console.ReadLine()); // Теперт мы можем задавать число и от него будет счет
+            int i = int.Parse(Console.ReadLine()); // Теперь мы можем задавать число и от него будет счет
 
             for (int i = 5; i >= 0; i--) // int i = 5; - тут ставим 5
-                                         // i < 5; делаем  i > 0;
-                                         // i++ делаем i-- и теперь у нас идет отсчет назад
-                                         // если хотим добавить 0 то i > 0; делаем i >= 0;
+                                         // i < 5; меняем на  i > 0;
+                                         // i++ меняем на  i-- и теперь у нас идет отсчет назад
+                                         // если хотим добавить 0 то i > 0; меняем на  i >= 0;
             {
                 Console.WriteLine(i);
                 
             }
             */
 
-            // Теперт мы можем задавать число в консоле и от него будет идти  отсчет:
+            // Теперь мы можем задавать число в консоле и от него будет идти  отсчет:
             /*
             int i = int.Parse(Console.ReadLine());
             for (; i >= 0; i--) 
@@ -631,8 +632,9 @@ namespace _SimleCode_Lessons
             }
             Console.ReadLine();
             */
-            // Делаем отсчет назад и вперед:
 
+            // Делаем отсчет назад и вперед:
+            /*
             for (int i = 0, j = 5; i < 5; i++, j--) 
                                                     
             {                                       
@@ -640,8 +642,66 @@ namespace _SimleCode_Lessons
                 Console.WriteLine("j: " + j);
             }
             Console.ReadLine();
+            */
+
+
+            //LESSON 26.КЛЮЧЕВОЕ СЛОВО BREAK - ОПЕРАТОР BREAK - ПРИМЕР - СИНТАКСИС - C# 
+            // break; - блокирует цикл выполнения 
+            /*
+            for (int i = 0; i  < 100; i++)
+            {
+                string msg = Console.ReadLine();
+                if (msg == "Exit") // Если мы впишим Exit в консоль это слово, то он остановит все действия
+                {
+                    break; //Можно писать что-то до 100 раз пока не остановим введя Exit
+                }
+                Console.WriteLine(i);
+            }
+            Console.ReadLine(); 
+            */
+
+
+            //LESSON 27.КЛЮЧЕВОЕ СЛОВО CONTINUE- ОПЕРАТОР CONTINUE
+            //continue; - позволяет прирвать какую-то этерацию цикла не выходя из нее
+            /*
+            for (int i = 0; i < 5; i++)
+            {
+                if (i == 2) // Если значение в переменной i будет равна 2 то выполняется continue;
+                {
+                    continue; // Он прирвет итерацию цикла на 2ке, ее не будет в счете и начнет как бы заново с 3 4, будет  0 1 3 4 
+                }
+
+                Console.WriteLine(i);
+            }
+
+            Console.ReadLine();
+            */
+
+
+            //LESSON 28.ВЛОЖЕННЫЕ ЦИКЛЫ  - КАК РАБОТАЮТ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
+
     }
 
 }
