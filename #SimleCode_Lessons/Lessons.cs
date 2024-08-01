@@ -679,20 +679,68 @@ namespace _SimleCode_Lessons
 
 
             //LESSON 28.ВЛОЖЕННЫЕ ЦИКЛЫ  - КАК РАБОТАЮТ 
+            // Вложенный цилк - это цикл в цикле
 
+            //Example: (Цикл в цикле)
+            /*
+             while (true) 
+             {
+                for (int i = 0; i < Length; i++) 
+                {
+                    for (int j = 0; j < Length; j++)
+                    {
+                        do
+                        {
 
+                        } while (true);
+                    }
+                     
+                }
 
+             }
+             
+            */
 
+            //Example:
+            /*
+            for (int i = 0; i <= 3; i++)
+            {
+                Console.WriteLine("Цикл 1 итерация " + i); // Этот цикл выполнится 3 раза
 
+                for (int j = 0; j <=5; j++)
+                {
+                    Console.WriteLine("\tЦикл 2 итерация " + j); // Этот цикл будет выполнястя 5 раз внутри цикла  1 итерации
+                                                                 // \t - (Табуляция) Он разобьет на отступы и будет видно где, какой цикл работает
+                    for(int k = 0; k <= 2; k++)
+                    {
+                        Console.WriteLine("\t\tЦикл 3 итерация " + k); // Этот цикл будет выполнястя 2 раза внутри цикла  2 итерации
+                    }
+                }
+            }
 
+            Console.ReadLine();
+            */
 
+            //Example: (программа которая выводит квадрат или прямоугольник)
+            /*
+            Console.Write("Введите высоту прямоугольника: "); // Можем задать высоту в ручную
+            int height = int.Parse(Console.ReadLine());
 
+            Console.Write("Введите ширину прямоугольника: "); // Можем задать ширину в ручную 
+            int width = int.Parse(Console.ReadLine());
 
-
-
-
-
-
+            for (int j = 0; j < height; j++)
+            {
+                for (int i = 0; i < width; i++)
+                {
+                    Console.Write("#"); // рисует наш прямоугольник
+                }
+                Console.WriteLine(); //Выполнит переход на другую строчку
+            }
+           
+            
+            Console.ReadLine();
+            */ 
 
 
 
