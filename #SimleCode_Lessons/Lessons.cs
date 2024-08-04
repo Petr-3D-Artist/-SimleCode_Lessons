@@ -809,7 +809,7 @@ namespace _SimleCode_Lessons
             {
                 for (int j = height; j > i; j--)
                 {
-                    Console.Write(" "); // Замест * в "  тут ничего, что бы был отступ
+                    Console.Write(" "); // Вместо * в " "  тут ничего, что бы был отступ
                 }
                 for (int j = 0; j <= i; j++)
                 {
@@ -834,6 +834,7 @@ namespace _SimleCode_Lessons
             }
             Console.ReadLine();
             */
+
             //Теперь сделаем треугольинк в другую сторону:
 
             /*
@@ -865,6 +866,67 @@ namespace _SimleCode_Lessons
 
 
             //LESSON 30.ТЕРНАРНЫЙ ОПЕРАТОР - ЧТО ЭТО - ПРИМЕР - КАК ИСПОЛЬЗОВАТЬ
+
+            //Унарный:
+            /*
+            {
+                int a = 0;
+                a++; // Унарная операция, один операнд 
+            }
+            */
+
+            //Бинарный:
+            /*
+            {
+                int a = 0;
+                int b = 1;
+                int c = a + b; // Бинарный у него 2 операции a + b
+            }
+            */
+
+            // Тенарный - [1й операнд - условие] ? [2й операнд - if_true] : [3й операнд if_false]
+            //?  Это true
+            //: Это false
+
+            //Example:
+            /*
+            bool accessAllowed;
+            string storedPassword = "qwerty";
+            string enteredPassword = Console.ReadLine();
+            
+            //if (enteredPassword == storedPassword)
+            //{
+            //  accessAllowed = true;
+            //}
+            //else
+            //Он помещает весь этот код в одну строчку ? true : false;
+
+            accessAllowed = enteredPassword == storedPassword ? true : false;
+            Console.WriteLine(accessAllowed);
+            Console.ReadLine(); 
+            */
+
+            //Example:
+            /*
+            int inputData = int.Parse(Console.ReadLine());
+            int outpuData = (inputData < 0) ? 0 : inputData; 
+
+            Console.WriteLine(outpuData);
+            Console.ReadLine();
+            */
+
+
+            //LESSON 31.ЧТО ТАКОЕ МАССИВЫ - ОДНОМЕРНЫЙ МАССИВ C# ПРИМЕРЫ 
+
+
+
+
+
+
+
+
+
+
 
 
 
