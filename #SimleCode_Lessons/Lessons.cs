@@ -740,7 +740,137 @@ namespace _SimleCode_Lessons
            
             
             Console.ReadLine();
-            */ 
+            */
+
+
+            //LESSON 29.КАК НАРИСОВАТЬ ТРЕУГОЛЬНИК В КОНСОЛИ C# - C# ДОМАШНИЕ ЗАДАНИЯ
+
+            //Сверху вниз будет создаваться треугольинк:
+
+            /*
+            *   
+            **
+            ***
+            ****
+            *****
+            */
+
+            /*
+            Console.Write("Введите высоту треугольника: ");
+            int height = int.Parse(Console.ReadLine());
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("*"); // Write - Что бы мы переходили на другую строчку
+                }
+                    Console.WriteLine();
+            }
+                Console.ReadLine();
+            */
+
+            //Снизу вверху будет создаваться треугольник:
+
+            /*
+            *****
+            ****
+            ***
+            **
+            *
+            */
+
+            /*
+            Console.Write("Введите высоту треугольника: ");
+            int height = int.Parse(Console.ReadLine());
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = height; j > i; j--)
+                {
+                    Console.Write("*"); // Write - Что бы мы переходили на другую строчку
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+            */
+
+            //Теперь сделаем треугольинк в другую сторону:
+            /*
+                *
+               **
+              ***
+             ****
+            *****
+            */
+
+            /*
+            Console.Write("Введите высоту треугольинка: ");
+            int height = int.Parse(Console.ReadLine());
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = height; j > i; j--)
+                {
+                    Console.Write(" "); // Замест * в "  тут ничего, что бы был отступ
+                }
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("*"); // Write - Что бы мы переходили на другую строчку
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+            */
+
+            // Отрисовка по курсору:
+            /*
+            Console.Write("Введите высоту треугольинка: ");
+            int height = int.Parse(Console.ReadLine());
+            for (int i = 0; i < height; i++)
+            {
+                Console.SetCursorPosition(height - i, i + 1); // Он принимает 2 параметра (цифры) которые определяют расстояние от левого (1я цифра) края и верхнего (2я цифра) края консоли 
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("*"); // Write - Что бы мы переходили на другую строчку
+                }  
+            }
+            Console.ReadLine();
+            */
+            //Теперь сделаем треугольинк в другую сторону:
+
+            /*
+             *****
+              ****
+               ***
+                **
+                 *
+             */
+            /*
+            Console.Write("Введите высоту треугольинка: ");
+            int height = int.Parse(Console.ReadLine());
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = height; j > i; j--)
+
+                {
+                    Console.Write("*"); 
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+            */
+
+
+
+            //LESSON 30.ТЕРНАРНЫЙ ОПЕРАТОР - ЧТО ЭТО - ПРИМЕР - КАК ИСПОЛЬЗОВАТЬ
+
+
+
+
+
+
 
 
 
