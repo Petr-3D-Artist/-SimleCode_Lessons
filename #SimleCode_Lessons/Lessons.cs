@@ -966,6 +966,57 @@ namespace _SimleCode_Lessons
             */
 
 
+            // LESSON 34.ЗАПОЛНИТЬ МАССИВ С КЛАВИАТУРЫ - ВВОД  МАССИВА С КОНСОЛИ - ДОМАШНИЕ ЗАДАНИЯ 
+
+            //Заполнение массива с клавиатуры, вручную:
+
+            Console.Write("Введите количество элементов массива:\t"); // \t отступ, тобуляция. Сюда вписываем вручную кол-во нужных массивов
+
+            int elementsCount = int.Parse(Console.ReadLine()); // Сюда elementsCount будем получать о кол-во элементов нашего массива 
+
+            int[] myArray = new int[elementsCount];
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                Console.Write($"\nВведите элемент массива под индексом {i}:\t "); // \n  Он делает пустой промежудок между строчками, что бы они не были слипшимися
+                myArray[i] = int.Parse(Console.ReadLine()); 
+            }
+
+            Console.WriteLine("\nВывод массива:");
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                Console.WriteLine(myArray[i]); 
+            }
+            Console.ReadLine();
+            */
+
+
+            //LEESON 35.ВЫВОД МАССИВА В ОБРАТНОМ ПОРЯДКЕ - РАБОТА С МАССИВАМИ - ДОМАШНИЕ ЗАДАНИЯ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         }
