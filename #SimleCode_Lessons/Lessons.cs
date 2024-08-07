@@ -947,14 +947,23 @@ namespace _SimleCode_Lessons
             */
 
             //LESSON 33.ВЫВОД МАССИВА - ПЕРЕБОР МАССИВА - МАССИВЫ И ЦИКЛЫ 
+            //Example
+            /*
+            int[] myArray = { 10, 3, 2, 55 };
+            Console.WriteLine(myArray[0]); // Выведeт в консоль цифру 10 из нашего массива                              
+                                           // [0] - это 10 из нашего массива [1] - это 3
+            Console.ReadLine();
+            */
 
-
-
-
-
-
-
-
+            //Цикл и массив:
+            /*
+            int[] myArray = { 10, 3, 2, 55 };
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                Console.WriteLine(myArray[i]); // он выведет на консоль все цифры массива 10 3 2 55
+            }
+            Console.ReadLine();
+            */
 
 
 
