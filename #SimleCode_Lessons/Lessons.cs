@@ -1026,6 +1026,34 @@ namespace _SimleCode_Lessons
 
             //LESSON 37.НАЙТИ НАИМЕНЬШИЙ ЭЛЕМЕНТ МАССИВА C# - РАБОТА С МАССИВАМИ - ДОМАШНИЕ ЗАДАНИЯ
 
+            /
+            int[] myArray = { 2, 3, 99, 49, 64, 77, 4, 42, 5 }; // Искать будем тут
+
+            int minValue = myArray[0]; // Переменная в которой будет хранится минимальное значение
+
+            for (int i = 1; i < myArray.Length; i++)
+            {
+                if (myArray[i] < minValue) // Если поставить значок в другу сторону > то мы найдем наибольшое число в массиве
+                {
+                    minValue = myArray[i];
+                }
+            }
+            Console.WriteLine(minValue);
+            Console.ReadLine();
+            */
+
+
+
+            //LESSON 38.КАК РАБОТАТЬ С МАССИВАМИ В C# НА САМОМ ДЕЛЕ
+
+
+
+
+
+
+
+
+
 
 
 
