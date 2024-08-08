@@ -994,7 +994,7 @@ namespace _SimleCode_Lessons
 
             //LEESON 35.ВЫВОД МАССИВА В ОБРАТНОМ ПОРЯДКЕ - РАБОТА С МАССИВАМИ - ДОМАШНИЕ ЗАДАНИЯ
 
-            /
+            /*
             int[] myArray = { 1, 56, 69, 7 }; 
             Console.WriteLine("\nВывод массива:");
 
@@ -1007,13 +1007,24 @@ namespace _SimleCode_Lessons
 
 
             //LESSON 36.НАЙТИ СУММУ ЧЕТНЫХ ЧИСЕЛ В МАССИВЕ C# - РАБОТА С МАССИВАМИ - ДОМАШНИЕ ЗАДАНИЯ 
+            /*
+            int[] myArray = { 2, 3, 99, 49, 64, 77, 4, 42, 5 };
+
+            int result = 0;
+
+            for (int i = 0; i < myArray.Length; i++) 
+            {
+                if (myArray[i]% 2 == 0)
+                {
+                    result += myArray[i];   
+                }
+            }
+            Console.WriteLine(result);
+            Console.ReadLine();
+            */
 
 
-
-
-
-
-
+            //LESSON 37.НАЙТИ НАИМЕНЬШИЙ ЭЛЕМЕНТ МАССИВА C# - РАБОТА С МАССИВАМИ - ДОМАШНИЕ ЗАДАНИЯ
 
 
 
